@@ -33,6 +33,7 @@ jobs:
           api-level: 29
           script: |
             adb devices -l
+            python testx.py
 
       # - name: test
       #   run: adb devices -l
