@@ -34,7 +34,7 @@ jobs:
           script: |
             adb devices -l
             pip install -r requirements.txt
-            python testx.py
+            python test.py
       - name: Update repo
         run: |
           git config user.name "github-actions[bot]"
