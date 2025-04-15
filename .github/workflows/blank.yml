@@ -33,6 +33,7 @@ jobs:
           api-level: 29
           script: |
             adb devices -l
+            pip install -r requirements.txt
             python testx.py
 
       # - name: test
