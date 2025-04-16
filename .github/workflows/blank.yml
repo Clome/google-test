@@ -32,7 +32,7 @@ jobs:
         with:
           api-level: 35
           arch: x86_64
-          profile: pixel_9_pro
+          profile: pixel_7_pro
           target: playstore
           script: |
             adb devices -l
