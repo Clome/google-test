@@ -30,7 +30,9 @@ jobs:
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 29
+          api-level: 36
+          arch: x86_64
+          profile: Pixel 7 Pro
           script: |
             adb devices -l
             pip install -r requirements.txt
