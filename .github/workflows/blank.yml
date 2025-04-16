@@ -37,9 +37,10 @@ jobs:
             python test.py
       - name: Update repo
         run: |
+          cd /home/runner/.android/avd/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull
+          # git pull
           git add .
           git commit -m "generated"
           git push
