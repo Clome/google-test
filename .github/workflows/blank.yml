@@ -33,7 +33,7 @@ jobs:
           api-level: 35
           arch: x86_64
           profile: pixel_9_pro
-          target: google_apis
+          target: playstore
           script: |
             adb devices -l
             emulator -list-avds
