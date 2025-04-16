@@ -33,6 +33,7 @@ jobs:
           api-level: 35
           arch: x86_64
           profile: Nexus 6
+          target: google_apis
           script: |
             adb devices -l
             pip install -r requirements.txt
