@@ -36,6 +36,7 @@ jobs:
           target: google_apis
           script: |
             adb devices -l
+            emulator -list-avds
             pip install -r requirements.txt
             python test.py
       - name: Update repo
