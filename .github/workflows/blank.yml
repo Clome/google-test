@@ -40,7 +40,9 @@ jobs:
           mv /home/runner/.android/avd/test.avd .
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # git pull
+          git diff --name-status master origin/master
+          git pull
+          
           git add .
           git commit -m "generated"
           git push
